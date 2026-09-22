@@ -1,0 +1,3 @@
+gcc_flavor:
+- main       # [not ANACONDA_ROCKET_ENABLE_MANYLINUX]
+- manylinux  # [ANACONDA_ROCKET_ENABLE_MANYLINUX]

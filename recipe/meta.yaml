@@ -1,45 +1,27 @@
-{% set name = "<PLEASE ADD PKG NAME>" %}
-{% set version = "<PLEASE ADD PKG VERSION>" %}
-
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
-
-source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: <sha256>
+  name: _gcc_mutex
+  version: 1
 
 build:
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  skip: True  # [py<38]
+  string: {{ gcc_flavor }}_{{ PKG_BUILDNUM }}
+  noarch: generic
+  skip: True  # [not (linux and x86_64)]
 
-requirements:
-  host:
-    - python
-    - pip
-  run:
-    - python
-
-test:
-  imports:
-    - {{ name.replace('-', '.') }}
-  requires:
-    - pip
-  commands:
-    - pip check
-
+# Omitted fields are intentional. Do not modify.
 about:
-  home: <PLEASE ADD HOME URL>
-  summary: <PLEASE ADD SUMMARY>
-  description: |
-    <PLEASE ADD DESCRIPTION>
-  license: <PLEASE ADD LICENSE>
-  license_family: <PLEASE ADD LICENSE_FAMILY>
-  license_file: <PLEASE_ADD_LICENSE_FILE>
-  dev_url: <PLEASE ADD DEV URL>
-  doc_url: <PLEASE ADD DOC URL>
+  home: https://github.com/AnacondaRecipes/_gcc_mutex-feedstock
+  summary: Mutex for the gcc toolchain
+  description: Mutex for the gcc toolchain to control the gcc flavor/variant
+  dev_url: https://github.com/AnacondaRecipes/_gcc_mutex-feedstock
+  doc_url: https://github.com/AnacondaRecipes/_gcc_mutex-feedstock
 
 extra:
-  recipe-maintainers:
-    - Jrice1317
+  skip-lints:
+    - missing_source_tracking
+    - missing_source_section
+    - missing_section
+    - missing_tests
+    - missing_license_file
+    - missing_license
+    - missing_license_family

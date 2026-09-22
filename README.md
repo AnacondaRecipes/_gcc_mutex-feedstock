@@ -1,33 +1,19 @@
-About <pkg_name>-feedstock
-=======================
+# About _gcc_mutex-feedstock
 
-Feedstock license: [BSD-3-Clause](LICENSE)
+Home: https://github.com/AnacondaRecipes/_gcc_mutex-feedstock
 
-Home: <home_url>
+Summary: Mutex package for the gcc toolchain
 
-Package license: <pkg_license>
+# Installing _gcc_mutex
 
-Summary: <pkg_summary>
-
-
-Current release info
-====================
-
-| Name | Downloads | Version | Platforms |
-| --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-<pkg_name>-green.svg)](https://anaconda.org/anaconda/<pkg_name>) | [![Conda Downloads](https://img.shields.io/conda/dn/anaconda/<pkg_name>.svg)](https://anaconda.org/anaconda/<pkg_name>) | [![Conda Version](https://img.shields.io/conda/vn/anaconda/<pkg_name>.svg)](https://anaconda.org/anaconda/<pkg_name>) | [![Conda Platforms](https://img.shields.io/conda/pn/anaconda/<pkg_name>.svg)](https://anaconda.org/anaconda/<pkg_name>) |
-
-Installing <pkg_name>
-==================
-
-Installing `<pkg_name>` from the main channel can be achieved by:
+Installing `_gcc_mutex-feedstock` from the main channel can be achieved by:
 
 ```
-conda install <pkg_name>
+conda install _gcc_mutex
 ```
 
-It is possible to list all of the versions of `<pkg_name>` available on your platform with `conda`:
+It is possible to list all of the versions of `_gcc_mutex-feedstock` available on your platform with `conda`:
 
 ```
-conda search <pkg_name>
+conda search _gcc_mutex
 ```
