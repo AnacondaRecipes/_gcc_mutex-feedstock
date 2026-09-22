@@ -5,6 +5,7 @@ package:
 build:
   number: 0
   string: {{ gcc_flavor }}_{{ PKG_BUILDNUM }}
+  noarch: generic
 
 about:
   home: https://github.com/AnacondaRecipes/_gcc_mutex-feedstock
