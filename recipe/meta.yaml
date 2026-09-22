@@ -14,3 +14,7 @@ about:
   # license_file: TBD
   dev_url: https://github.com/AnacondaRecipes/_gcc_mutex-feedstock
   doc_url: https://github.com/AnacondaRecipes/_gcc_mutex-feedstock
+
+extra:
+  skip-lints:
+    - missing_source_section
