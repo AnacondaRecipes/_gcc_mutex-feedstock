@@ -6,6 +6,7 @@ build:
   number: 0
   string: {{ gcc_flavor }}_{{ PKG_BUILDNUM }}
   noarch: generic
+  skip: True  # [not (linux and x86_64)]
 
 # Omitted fields are intentional. Do not modify.
 about:
