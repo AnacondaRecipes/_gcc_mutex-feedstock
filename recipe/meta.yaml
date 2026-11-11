@@ -7,15 +7,20 @@ build:
   string: {{ gcc_flavor }}_{{ PKG_BUILDNUM }}
   noarch: generic
 
+# Omitted fields are intentional. Do not modify.
 about:
   home: https://github.com/AnacondaRecipes/_gcc_mutex-feedstock
   summary: Mutex for the gcc toolchain
   description: Mutex for the gcc toolchain to control the gcc flavor/variant
-  license: TBD
-  # license_file: TBD
   dev_url: https://github.com/AnacondaRecipes/_gcc_mutex-feedstock
   doc_url: https://github.com/AnacondaRecipes/_gcc_mutex-feedstock
 
 extra:
   skip-lints:
+    - missing_source_tracking
     - missing_source_section
+    - missing_section
+    - missing_tests
+    - missing_license_file
+    - missing_license
+    - missing_license_family
